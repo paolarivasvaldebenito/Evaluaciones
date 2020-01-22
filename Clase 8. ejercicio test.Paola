@@ -1,0 +1,268 @@
+
+
+Algoritmo menu
+	
+	Escribir " 1-Secuencial"
+	Escribir " 2-Condicional si entonces"
+	Escribir " 3-Condicional si entonces anidado"
+	Escribir " 4-Condicional segun"
+	Escribir " 5-Repetitiva Mientras"
+	Escribir " 6-Repetitiva Repetir"
+	Escribir " 7-repetitiva Para"
+	Escribir " 8-Arreglo Simple"
+	Escribir " 9-Arreglo Bidimencional"
+	Escribir " 10-Salir"
+	
+	Leer opcion
+	
+	Segun opcion Hacer
+		1: Escribir f1
+		2: Escribir f2	
+		3: Escribir f3
+		4: Escribir f4
+		5: Escribir f5
+		6: Escribir f6
+		7: Escribir f7
+		8: Escribir f8
+		9: Escribir f9
+		10:Escribir Salir
+			
+			
+			
+	FinSegun
+	
+Fin algoritmo
+
+	
+	
+Funcion Promedio <- f1 ()
+	Escribir "Esta funcion saca el promedio de 3 numeros"
+	Escribir "Escribir primer num1"
+	Leer num1
+	Escribir "Escribir segundo num2"
+	Leer num2
+	Escribir "Escribir tercer num3"
+	Leer num3
+	
+	Promedio= (num1+num2+num3)/3
+	Escribir"************"
+Fin Funcion
+
+
+
+Funcion Resultado <- f2 ()
+	Escribir "Ingrese nombre"
+	Leer  Nombre
+	Escribir "Ingrese Genero"
+	escribir "1.Femenino"
+	escribir "2.Masculino"
+	Leer genero
+	
+    Si genero=1 Entonces
+		
+		
+		Escribir "Ingrese baño de mujeres" 
+	SiNo
+		Escribir "Ingrese a baño de hombres"
+		
+	Fin Si
+	Escribir"*************"
+FinFuncion
+
+
+
+Funcion Monto_a_pagar <- f3 ()
+	Escribir "Ingrese nombre"
+	Leer  Nombre
+	Escribir "Ingrese Genero"
+	escribir "1.Femenino"
+	escribir "2.Masculino"
+	Leer genero
+	
+	
+    Si genero=1 Entonces
+		
+		
+		Escribir "Ingrese baño de mujeres" 
+		Escribir "1.baño"
+		Escribir "2.ducha"
+		Leer opc
+		
+		
+		Si opc=1 Entonces
+			Escribir "Cancele $250"
+		Finsi
+		Si opc=2 Entonces
+			Escribir "Cancele $2500"
+		Finsi
+		Si opc<>1 y opc<>2 Entonces
+			Escribir "opcion no valida"
+		Finsi
+	
+		
+		
+	SiNo
+		Escribir "Ingrese a baño de hombres"
+		Escribir "1.baño"
+		Escribir "2.ducha"
+		
+		Si opc=1 Entonces
+			Escribir "Cancele $250"
+		Finsi
+		Si opc=2 Entonces
+				Escribir "Cancele $2500"
+		Finsi
+		Si opc<>1 y opc<>2 Entonces
+				Escribir "opcion no valida"
+		Finsi
+	FinSi
+	Escribir"*************"
+FinFuncion
+
+
+Funcion Escritura_numero <- f4 ()
+	
+	Escribir "Ingrese u numero del 1 al 10"
+	Leer num
+	
+	Segun num Hacer
+		1: Escribir "uno"
+		2: Escribir "dos"
+		3: Escribir "Tres"
+		4: Escribir "Cuatro"
+		5: Escribir "Cinco"
+		6: Escribir "Seis"
+		7: Escribir "Siete"
+		8: Escribir "Ocho"
+		9: Escribir "Nueve"
+		10:Escribir "Diez"
+		
+	Fin Segun
+	Escribir"************"
+FinFuncion
+
+
+Funcion resultado <- f5 ()
+	
+	Escribir "Ingrese un numero"
+	Leer num
+	cont=0
+	Suma=0
+	
+	Mientras num<>0 Hacer
+		cont=cont+1
+		suma=suma+num
+		
+		Escribir "Ingrese un numero"
+		Leer num
+		
+		
+		
+	Fin Mientras
+	si cont>0 entonces
+		promedio=suma/cont
+	FinSi
+	
+	
+	Escribir " Usted ha ingresado ", cont, " numeros  y la suma es: ", suma, " y el promedio es igual a:  ", promedio
+	
+	Escribir"*************"
+	
+FinFuncion
+
+
+
+
+Funcion nombre <- f6 ()
+	
+	Definir nom como caracter
+	Escribir "Ingrese un nombre"
+	Leer nom
+	
+	i=0
+	
+	Repetir
+		Escribir "Ingrese un nombre",1+i
+		Leer nom 
+		nom2=Minusculas(nom)
+		i=1+i
+	Hasta Que nom2=="juan"
+	
+	Escribir "Usted ha ingresado", i "nombres"
+	
+	
+	Escribir"**************"
+	
+Fin funcion
+	
+	
+	
+	
+	
+Funcion resultado <- f8 ()
+		
+	Escribir "Ingrese lista de alumnos"
+	Leer lista
+	
+	Definir alumnos Como Caracter
+	//imension alumnos [tamaño lista]
+	
+	
+FinFuncion
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Realizar un seudocodigo que realice lo siguiente
+//1. Tenga el programa principal solo un menu en el cual va a llamar a las funciones que realizaran tareas independientes
+//Ejemplo Menu:
+//1.Secuencial:
+//2.Condicional si entonces:
+//3.Condicional si entonces anidado:
+//4.Condicional segun://en pseint es case // en java es switch
+//5.Repetitiva Mientras
+//6.Repetitiva Repetir
+//7.repetitiva Para
+//8.Arreglo Simple //dimension en pseint// java es arrays
+//9.Arreglo Bidimencional
+//10.SALIR
+
+//OJO!!! Las funciones deben ser realizadas segun tipo de ciclo
+
+
+//La funcion 1. Debera pedir 3 numeros y mostrar el promedio de estos
+//La funcion 2. En un lugar tradicional antiguo se pedira el nombre y genero de la persona,
+//siendo el genero determinante para derivarlo al baño de mujeres u hombres
+//la funcion 3. En el ejercicio anterior preguntar lo mismo angterior solo si quiere ir al wc cobrar $250 y si quiere ir a duchas$ 2.500.-
+//la funcion 4.Ingrese un numero del 1 al 10 y mostrar el numero en palabras
+//La funcion 5. Ingresar N numeros y que pare al ingresar un cero. 
+//Al terminar me diga la cantidad de numeros ingresados excluyendo al cero además de el promedio de estos
+//La funcion 6. Ingrese n nombres y cuando ingrese el nombre "Juan" me diga la cantidad de intentos que se realizaron para llenar la lista.
+//la funcion 7. Para un maximo de 10 personas preguntar su nombre y mostrar los que repiten mas de 1 vez. Sino mostrar no se repitio ninguno
+//Pedir el tamaño de un arreglo en el cual debo ingresar la lista de alumnos de full stack java. Mostrar todos los datos de cada alumno en linea
+//La funcion 9. Ingresar nombre, apellido, fono y email de cada alumnos de Full Satck Java. Mostrar todos los datos de cada alumno en 1 linea
+
+	
+	
+	
+
+	
